@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>variaveis</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Olá Mundo</h1>
+        <p>Ja me livrei da maldição</p>
+        <script>
+            var n1 = Number(window.prompt("Digite um número: ")); // idependende do tipo Recebe string
+            var n2 = Number(window.prompt("Digite outro número: ")); // mesma coisa
+            var s = n1 + n2;
+            /* formas de apresentar strings
+                (não faz interpolação
+                'Eu estou aprendendo s' forma errada não vai apresentar de forma correta)
+                (uso concatenação
+                'Eu estou aprendendo' + s forma certa menos confuza porem menos otimizada)
+                (usa template string
+                'Eu estou aprendendo ${s}' forma certa um pouco confusa porem mais otimizada)
+            */
+            window.alert(`A soma entre ${n1} e ${n2} e igual a ${s}`);
+            // + para adição
+            // + para concatenação
+
+            // agora para converter para string
+            // String(n)
+            // n.toString()
+        </script>
+    </body>
+</html>
