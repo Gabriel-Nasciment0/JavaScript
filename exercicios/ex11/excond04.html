@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nascionalidade</title>
+        <style>
+            body {
+                font: normal 16px Arial, Helvetica, sans-serif;
+            }
+            input {
+                width: 60px;
+                margin: 10px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>E gringo ?</h1>
+        <input type="text" name="pais" id="pais" placeholder="pais" />
+        <input type="button" value="verificar" onclick="verificar()" />
+        <div id="resposta">Nascionalidade</div>
+        <script>
+            function verificar() {
+                var pais = window.document.getElementById("pais");
+                var resposta = window.document.getElementById("resposta");
+                var paisnasc = pais.value;
+                resposta.innerHTML = `<p>voce nasceu em ${paisnasc}</p>`;
+                // 3 if pois ainda sabia fazer diferente
+                if (paisnasc == "brasil") {
+                    resposta.innerHTML += `<p>você e brasileiro</p>`;
+                }
+                if (paisnasc == "Brasil") {
+                    resposta.innerHTML += `<p>você e brasileiro</p>`;
+                }
+                if (paisnasc == "BRASIL") {
+                    resposta.innerHTML += `<p>você e brasileiro</p>`;
+                } else {
+                    resposta.innerHTML += `<p>você e gringo</p>`;
+                }
+            }
+        </script>
+    </body>
+</html>

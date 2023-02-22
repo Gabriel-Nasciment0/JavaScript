@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Condições</title>
+    </head>
+    <body>
+        <h1>Sistea de multas</h1>
+        <input
+            type="number"
+            name="vel"
+            id="vel"
+            placeholder="Velocidade do carro KM/H"
+        />
+        <input type="button" value="Verificar" onclick="calcular()" />
+        <div id="res"></div>
+        <script>
+            function calcular() {
+                var cvel = window.document.getElementById("vel");
+                var res = window.document.getElementById("res");
+                var rvel = Number(cvel.value);
+                res.innerHTML = `<p>Sua velocidade atual e de <strong>${rvel}KM/H</strong></p>`;
+                if (rvel > 60) {
+                    res.innerHTML += `Sua velocidade foi de ${rvel}KM/H voce foi multado`;
+                }
+                res.innerHTML += `<p>Dirija sempre com cuidado</p>`;
+            }
+        </script>
+    </body>
+</html>
