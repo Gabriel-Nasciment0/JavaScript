@@ -1,14 +1,14 @@
 @charset "-utf-8";
-body{
+body {
     background-color: #09b7b7;
     font: normal 16px arial;
 }
-header , footer{
-color: white;
-text-align: center;
-
+header,
+footer {
+    color: white;
+    text-align: center;
 }
-section{
+section {
     background-color: white;
     border-radius: 10px;
     padding: 10px;
@@ -16,6 +16,6 @@ section{
     margin: auto;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.52);
 }
-footer{
+footer {
     font-style: italic;
 }

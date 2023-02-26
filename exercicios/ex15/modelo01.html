@@ -4,20 +4,41 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>modelo de exercicio</title>
+        <title>verificador de imagem</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <header>
-            <h1>Hora do dia</h1>
+            <h1>verificador de imagem</h1>
         </header>
         <section>
-            <div>
-                <p>testando</p>
+            <div id="Formulario">
+                <p>
+                    Ano de Nascimento:
+                    <input
+                        type="number"
+                        name="txtano"
+                        id="txtano"
+                        min="1900"
+                        placeholder="1900 a 2023"
+                    />
+                </p>
+                <p>
+                    Sexo:
+                    <input type="radio" name="radsex" id="mas" checked />
+                    <label for="mas">Masculino</label>
+                    <input type="radio" name="radsex" id="fem" />
+                    <label for="fem">Feminino</label>
+                </p>
+                <p>
+                    <input
+                        type="button"
+                        value="Verificar"
+                        onclick="verificar()"
+                    />
+                </p>
             </div>
-            <div>
-                <p>ola</p>
-            </div>
+            <div id="res">Preencha os dados para ver o resultado</div>
         </section>
         <footer>
             <p>&copy; GabrielNasciment0</p>
