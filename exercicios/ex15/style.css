@@ -1,6 +1,6 @@
 @charset "-utf-8";
 body {
-    background-color: #09b7b7;
+    background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
     font: normal 16px arial;
 }
 header,
@@ -9,12 +9,14 @@ footer {
     text-align: center;
 }
 section {
-    background-color: white;
-    border-radius: 10px;
-    padding: 10px;
+    color: #043448;
+    padding: 20px;
     width: 500px;
     margin: auto;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.52);
+    /* teste */
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: -5px -5px 100px #2c5263, 5px 5px 100px #2c5465;
 }
 footer {
     font-style: italic;
