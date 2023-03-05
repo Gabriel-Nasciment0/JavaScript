@@ -1,8 +1,8 @@
+var c = 1;
 do {
-    var c = 0;
     console.log(`passo${c}`);
     c++;
-} while (c < 1000);
+} while (c < 10);
 
 // teste logico no inicio
 // var c = 0;
