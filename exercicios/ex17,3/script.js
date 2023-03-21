@@ -10,7 +10,7 @@ function tabuada() {
         while (contador <= 10) {
             let item = document.createElement("option");
             item.text = `${Numero} X ${contador} = ${Numero * contador}`;
-            item.value = (`tab${contador}`);
+            item.value = `tab${contador}`;
             tabuada.appendChild(item);
             contador++;
         }
